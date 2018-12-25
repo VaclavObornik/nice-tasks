@@ -2,13 +2,21 @@
   "name": "nice-tasks",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./server",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./server/index.js",
+    "test": "cross-env mocha ./test"
   },
   "author": "Václav Oborník",
   "license": "ISC",
   "dependencies": {
+    "cross-env": "^5.2.0",
+    "koa": "^2.6.2",
+    "koa-static": "^5.0.0",
     "localforage": "^1.7.3"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
   }
 }
