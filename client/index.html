@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Nice Tasts</title>
+    <meta charset="utf-8"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 </head>
+
 <body>
 
-foooo baaaar
+<h1>Nice Tasts</h1>
+
+<!--Add buttons to initiate auth sequence and sign out-->
+<button id="authorize_button" style="display: none;" class="mdc-button" data-mdc-auto-init="MDCRipple">Authorize</button>
+<button id="signout_button" style="display: none;" class="mdc-button" data-mdc-auto-init="MDCRipple">Sign Out</button>
+
+<pre id="content" style="white-space: pre-wrap;"></pre>
+
+
+
+<ul class="mdc-list" data-mdc-auto-init="MDCList">
+    <li class="mdc-list-item" tabindex="0" data-mdc-auto-init="MDCRipple">
+        <span class="mdc-list-item__text">Single-line item</span>
+    </li>
+    <li class="mdc-list-item" data-mdc-auto-init="MDCRipple">
+        <span class="mdc-list-item__text">Single-line item</span>
+    </li>
+    <li class="mdc-list-item" data-mdc-auto-init="MDCRipple">
+        <span class="mdc-list-item__text">Single-line item</span>
+    </li>
+</ul>
+
+
+<script src="./app.js"></script>
+
+
+<script async defer src="https://apis.google.com/js/api.js"
+        onload="this.onload=function(){};handleClientLoad()"
+        onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
 
 </body>
 </html>
